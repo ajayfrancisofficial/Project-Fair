@@ -1,33 +1,59 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
-    <div>
-    <Row className='bg-body-tertiary w-100'>
-        <Col className='p-4 '>
-        <h4 className='ms-3'><i class="fa-solid fa-sheet-plastic ms-2 fs-3"></i> Project Fair</h4>
-        <p className='p-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi ex pariatur dolorem iste tempora quae esse beatae, exercitationem consequatur voluptatum sapiente debitis placeat sequi distinctio atque voluptatibus maiores rerum?</p>
-        </Col>
-        <Col className='p-4'>
-        <h4 className='my-4'>Links</h4>
-        <Link to={'/'} style={{textDecoration:'none'}}><h6>Home</h6></Link>
-        <Link to={'/login'} style={{textDecoration:'none'}}><h6>Login</h6></Link>
-        <Link to={'/register'} style={{textDecoration:'none'}}><h6>Register</h6></Link>
+    <div
+    className="d-flex justify-content-center align-items-center flex-column bg-info text-light mt-5"
+    style={{ width: "100%", height: "300px" }}>
+    <div className="footer-content d-flex justify-content-evenly w-100 flex-wrap">
+
+      <div style={{width:'400px'}} className="website">
+        <h4 >
+        <i style={{height:'25px'}} class="fa-solid fa-sheet-plastic me-2"></i>Project Fair
+        </h4>
+        <h6>
+          Designed and built with all the love in the world by Ajay.
+        </h6>
+        <h6>Code licensed, docs CC BY 3.0.</h6>
+        <h6>Currently v1.0.0</h6>
+      </div>
+
+      <div className="links d-flex flex-column">
+        <h4>Links</h4>
+        <Link to={'/'} style={{textDecoration:'none',color:'white'}}>Home</Link>
+        <Link to={'/login'} style={{textDecoration:'none',color:'white'}}>Login</Link>
+        <Link to={'/register'} style={{textDecoration:'none',color:'white'}}>Register</Link>
         
-        </Col>
-        <Col>
-        <h4 className='ms-3 mt-5'><i class="fa-solid fa-sheet-plastic ms-2 fs-3 me-2"></i>title</h4>
-        <p className='p-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi ex pariatur dolorem iste tempora quae esse beatae, exercitationem consequatur voluptatum sapiente debitis placeat sequi distinctio atque voluptatibus maiores rerum?</p>
-        
-        </Col>
-        <Col>
-        <h4 className='ms-3 mt-5'><i class="fa-solid fa-sheet-plastic ms-2 fs-3"></i> title</h4>
-        <p className='p-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi ex pariatur dolorem iste tempora quae esse beatae, exercitationem consequatur voluptatum sapiente debitis placeat sequi distinctio atque voluptatibus maiores rerum?</p>
-        </Col>
-    </Row>
-</div>
+        <Link to={'/projects'} style={{textDecoration:'none',color:'white'}}>All Projects</Link>
+      </div>
+
+      <div className="guides d-flex flex-column">
+      <h4>Guides</h4>
+        <Link to={'https://getbootstrap.com/'} style={{textDecoration:'none',color:'white'}}>React</Link>
+        <Link to={'https://react-bootstrap.github.io/'} style={{textDecoration:'none',color:'white'}}>React Bootstrap </Link><Link to={'https://react-bootstrap.github.io/'} style={{textDecoration:'none',color:'white'}}>Routing</Link>
+      </div>
+
+      <div className="contact d-flex flex-column flex-wrap">
+      <h4>Contact Us</h4>
+        <div className="d-flex">
+          <input className="form-control" placeholder="Enter your Mail" />
+          <button className="btn btn-warning ms-3"><i class="fa-solid fa-arrow-right fa-beat"></i></button>
+          </div>
+        <div className="icons mt-3 d-flex justify-content-between fs-5">
+          <Link to={''} style={{textDecoration:'none',color:'white'}}><i className="fa-brands fa-linkedin-in"></i></Link>
+          <Link to={''} style={{textDecoration:'none',color:'white'}}><i className="fa-brands fa-twitter"></i> </Link>
+          <Link to={''} style={{textDecoration:'none',color:'white'}}><i className="fa-brands fa-facebook-f"></i></Link>
+          <Link to={''} style={{textDecoration:'none',color:'white'}}><i className="fa-solid fa-envelope"></i></Link>
+          <Link to={''} style={{textDecoration:'none',color:'white'}}><i class="fa-brands fa-github"></i></Link>
+
+        </div>
+      </div>
+
+    </div>
+
+    <h6>Copyright © 2024 Project fair. Built with React.</h6>
+  </div>
   )
 }
 

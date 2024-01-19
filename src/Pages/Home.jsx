@@ -14,11 +14,12 @@ function Home() {
         <div className=' m-5'>
             <Row>
                 <Col lg={6} className='text-center mt-5'>
-                <h1 className='mb-3' style={{fontSize:'80px'}}><i  class="fa-solid fa-sheet-plastic me-3"></i>Project Fair</h1>
+                    
+                <h1 className=' display-1' style={{height:'120px'}}><i class="fa-solid fa-sheet-plastic me-3" style={{height:'90px'}}></i>Project Fair</h1>
                 <p>One Stop Destination for all Software Development Projects, where user can add and manage their projects.
                      As well as access all 
                     project available in our website...what are you waiting for!!!</p>
-                <Link className='btn btn-info'>Start Exploring <i className='fa-solid fa-location-arrow '></i></Link>
+                <Link to={'/login'} className='btn btn-info'>Start Exploring <i className='fa-solid fa-location-arrow '></i></Link>
                 </Col>
                 <Col lg={6}>
                 <img width={'600px'}  src={projectpic} alt="" />
