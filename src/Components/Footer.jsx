@@ -24,7 +24,7 @@ function Footer() {
         <Link to={'/'} style={{textDecoration:'none',color:'white'}}>Home</Link>
         <Link to={'/login'} style={{textDecoration:'none',color:'white'}}>Login</Link>
         <Link to={'/register'} style={{textDecoration:'none',color:'white'}}>Register</Link>
-        
+        <Link to={'/dashboard'} style={{textDecoration:'none',color:'white'}}>Dashboard</Link>
         <Link to={'/projects'} style={{textDecoration:'none',color:'white'}}>All Projects</Link>
       </div>
 
@@ -52,7 +52,7 @@ function Footer() {
 
     </div>
 
-    <h6>Copyright © 2024 Project fair. Built with React.</h6>
+    <h6 className='mt-5'>Copyright © 2024 Project fair. Built with React.</h6>
   </div>
   )
 }

@@ -7,7 +7,7 @@ function Profile() {
 
   return (
     
-      <Accordion className=' shadow rounded m-3'>
+      <Accordion className=' shadow rounded m-3' defaultActiveKey="0">
         <Accordion.Item >
           <Accordion.Header> <h2>Profile</h2></Accordion.Header>
           <Accordion.Body>
